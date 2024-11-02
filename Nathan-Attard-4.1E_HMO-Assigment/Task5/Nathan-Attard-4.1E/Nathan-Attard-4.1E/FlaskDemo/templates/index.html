@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en" style="background-color: black;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Application</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+</head>
+
+<body>
+
+    <h1 class="Title" style="color: white; text-align: center; font-size: 36px; font-weight: bold;">Weather report</h1>
+    <p id="Date">{{ date }} </p>
+    <form action="/send_email" method="post">
+	<p >
+		 CLick the email button to check the temperature </p>
+    <button id="Email" style="padding: 20px;">Email</button>
+    </form>
+	<style>
+		html {
+			animation: transitionIn 5.75s;
+		}
+
+		form{	
+			background-color: cyan;
+			float: left; 
+			pad: 50px; 
+			width: 500px; 
+			text-align: center;
+			font-size: 40px;
+			color: rgb(0, 0, 0); 
+			font-weight: bold; 
+			margin-left: 380px;
+		}
+
+		#Date{
+			color: white;
+			font-size: 40px;
+			text-align: center;
+		}
+			
+		@keyframes transitionIn {
+	
+	  	 from{
+	
+		 opacity: 0;
+		 transform: rotateX(-90deg);
+		}
+	
+		to{
+		 opacity: 1;
+		 transform: rotateX(0);
+		}
+	
+	}
+	</style>
+</body>
+</html>
+
+
+	
