@@ -5,9 +5,9 @@ from email.mime.multipart import MIMEMultipart
 # set up the SMTP server
 smtp_server = 'smtp.gmail.com'
 smtp_port = 587
-sender_email = 'nathanattard12345@gmail.com'
-sender_password = 'oidkjaqhrkvkuopd'
-receiver_email = 'nathanattard12345@gmail.com'
+sender_email = '-----Do your email here ---------' #removed my email for security
+sender_password = '------ Do sender password here-------' #removed my password for rsecurity reasons
+receiver_email = '------- Do your email here ------'#removed my email for security
 
 # create message object
 message = MIMEMultipart()
